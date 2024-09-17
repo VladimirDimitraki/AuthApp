@@ -13,6 +13,7 @@ class AuthorizationViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var failureAutorizationMassage: String?
+    @Published var failureResetPassword: String?
     
     @Published var isSecure = false
     @Published var isEmailValid = false

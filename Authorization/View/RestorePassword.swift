@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Firebase
+import FirebaseAuth
 
 class RestorePassword {
     func resetPassword(email: String, completeion: @escaping (Error?) -> ()) {
@@ -50,11 +50,20 @@ struct RestorePasswordModalView: View {
             SignInButton(title: "Восстановить") {
                 RestorePassword().resetPassword(email: viewModel.email) { result in
                     switch result {
-                        
+                    case .none:
+                        viewModel.failureResetPassword = "Письмо с подтверждением отправлено на почту"
+                    case .some(let error):
+                        viewModel.failureResetPassword =  error.localizedDescription
                     }
                 }
             }
+            
+            if let isSendOnEmail = viewModel.failureResetPassword {
+                Text(isSendOnEmail)
+                    .padding()
+            }
         }
+        .padding([.leading, .trailing])
     }
 }
 

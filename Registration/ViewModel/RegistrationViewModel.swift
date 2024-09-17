@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-import Firebase
+import FirebaseAuth
 
 class RegistrationViewModel: AuthorizationViewModel {
     @Published var firstName = ""

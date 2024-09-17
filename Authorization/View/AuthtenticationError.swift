@@ -11,7 +11,7 @@ struct AuthtenticationError: View {
     @ObservedObject var viewModel: AuthorizationViewModel
     
     var body: some View {
-        Text(viewModel.failureAutorizationMassage ?? "no errors")
+        Text(viewModel.failureAutorizationMassage ?? "")
             .foregroundColor(.red)
     }
 }

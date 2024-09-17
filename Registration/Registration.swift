@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseAuth
 
 class Registration {
     func registrationNewUser(email: String, password: String) {
