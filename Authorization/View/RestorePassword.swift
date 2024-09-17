@@ -6,9 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
-struct RestorePassword: View {
+class RestorePassword {
+    func resetPassword(email: String, completeion: @escaping (Error?) -> ()) {
+        Auth .auth().sendPasswordReset(withEmail: email) { error in
+            completeion(error)
+        }
+    }
+}
+
+struct RestorePasswordView: View {
     @State private var isPresented = false
+    @ObservedObject var viewModel: AuthorizationViewModel
     
     var body: some View {
         VStack {
@@ -18,7 +28,7 @@ struct RestorePassword: View {
                 isPresented.toggle()
             }
             .sheet(isPresented: $isPresented) {
-                RestorePasswordModalView()
+                RestorePasswordModalView(viewModel: viewModel)
             }
             
         }
@@ -27,13 +37,35 @@ struct RestorePassword: View {
 }
 
 struct RestorePasswordModalView: View {
+    @ObservedObject var viewModel: AuthorizationViewModel
+    
     var body: some View {
-        Text("modalView")
+        VStack {
+            Text("Восстановление пароля")
+                .font(.title)
+            
+            FormField(fieldName: "Email", secureField: false, fieldValue: $viewModel.email)
+            
+            
+            SignInButton(title: "Восстановить") {
+                RestorePassword().resetPassword(email: viewModel.email) { result in
+                    switch result {
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
 struct RestorePassword_Previews: PreviewProvider {
     static var previews: some View {
-        RestorePassword()
+        RestorePasswordView(viewModel: AuthorizationViewModel())
+    }
+}
+
+struct RestorePasswordModalView_Previews: PreviewProvider {
+    static var previews: some View {
+        RestorePasswordModalView(viewModel: AuthorizationViewModel())
     }
 }
