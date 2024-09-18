@@ -23,7 +23,6 @@
 		788DE4AC2C99545E00B9812D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4AB2C99545E00B9812D /* RegistrationView.swift */; };
 		788DE4AD2C99545E00B9812D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4AB2C99545E00B9812D /* RegistrationView.swift */; };
 		788DE4AE2C99545E00B9812D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4AB2C99545E00B9812D /* RegistrationView.swift */; };
-		788DE4B02C99555500B9812D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4AF2C99555500B9812D /* RegistrationViewModel.swift */; };
 		788DE4B22C995C2400B9812D /* RegistrationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4B12C995C2400B9812D /* RegistrationButton.swift */; };
 		788DE4B32C995C2400B9812D /* RegistrationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4B12C995C2400B9812D /* RegistrationButton.swift */; };
 		788DE4B42C995C2400B9812D /* RegistrationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4B12C995C2400B9812D /* RegistrationButton.swift */; };
@@ -92,7 +91,6 @@
 		783925512C99F8FC00668A80 /* GoogleSignInCoustonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInCoustonButton.swift; sourceTree = "<group>"; };
 		788DE4A92C99508400B9812D /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		788DE4AB2C99545E00B9812D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		788DE4AF2C99555500B9812D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		788DE4B12C995C2400B9812D /* RegistrationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationButton.swift; sourceTree = "<group>"; };
 		78B8CB462C98035100416A3B /* AutorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B8CB492C98035100416A3B /* AutorizedAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizedAppApp.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 		788DE4A62C994FA100B9812D /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				788DE4A82C99501000B9812D /* ViewModel */,
 				788DE4A72C99500A00B9812D /* View */,
 				788DE4A92C99508400B9812D /* Registration.swift */,
 			);
@@ -179,14 +176,6 @@
 				788DE4B12C995C2400B9812D /* RegistrationButton.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		788DE4A82C99501000B9812D /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				788DE4AF2C99555500B9812D /* RegistrationViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		78B8CB3D2C98035100416A3B = {
@@ -511,7 +500,6 @@
 				78B8CBAF2C98759600416A3B /* SignInButton.swift in Sources */,
 				78B8CB4A2C98035100416A3B /* AutorizedAppApp.swift in Sources */,
 				788DE4B22C995C2400B9812D /* RegistrationButton.swift in Sources */,
-				788DE4B02C99555500B9812D /* RegistrationViewModel.swift in Sources */,
 				7839254D2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
 				78B8CB7B2C98056900416A3B /* AuthorizationView.swift in Sources */,
 				78B8CB7F2C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,

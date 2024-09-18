@@ -24,7 +24,7 @@ struct RestorePasswordView: View {
         VStack {
             Text("Забыли пароль?")
             
-            Button("Восстоновить") {
+            Button("Восстановить") {
                 isPresented.toggle()
             }
             .sheet(isPresented: $isPresented) {

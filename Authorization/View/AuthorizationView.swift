@@ -51,7 +51,7 @@ struct AuthorizationView: View {
                     
                     RestorePasswordView(viewModel: viewModel)
                     
-                    NavigationLink(destination: RegistrationView()) {
+                    NavigationLink(destination: RegistrationView(viewModel: AuthorizationViewModel())) {
                         Text("Создать аккаунт")
                     }
                 }

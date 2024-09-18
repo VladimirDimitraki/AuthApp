@@ -12,14 +12,19 @@ import FirebaseAuth
 class AuthorizationViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
+    @Published var firstName = ""
+    @Published var lastName = ""
+    
     @Published var failureAutorizationMassage: String?
     @Published var failureResetPassword: String?
-        
+    
     @Published var isLoggedIn = false
     @Published var isSecure = false
     @Published var isEmailValid = false
     @Published var isPasswordLenghtValid = false
-
+    @Published var isNecessarilyEmailField = false
+    @Published var isNecessarilyPasswordField = false
+    
     @Published var user: User?
     
     private var cancellableSet: Set<AnyCancellable> = []
@@ -43,5 +48,26 @@ class AuthorizationViewModel: ObservableObject {
             }
             .assign(to: \.isPasswordLenghtValid, on: self)
             .store(in: &cancellableSet)
+        
+        $email
+            .receive(on: RunLoop.main)
+            .map { email in
+                email.count == 0
+            }
+            .assign(to: \.isNecessarilyEmailField, on: self)
+            .store(in: &cancellableSet)
+        
+        $password
+            .receive(on: RunLoop.main)
+            .map { password in
+                password.count == 0
+            }
+            .assign(to: \.isNecessarilyPasswordField, on: self)
+            .store(in: &cancellableSet)
+    }
+    
+    func isValidBothForm() -> Bool {
+        return isEmailValid && isPasswordLenghtValid
     }
 }
+
