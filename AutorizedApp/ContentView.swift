@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = AuthorizationViewModel()
+    
     var body: some View {
-        VStack {
-           AuthorizationView()
+        if viewModel.isLoggedIn {
+            HomePage()
+        } else {
+            AuthorizationView(viewModel: viewModel)
         }
-        .padding()
     }
 }
 

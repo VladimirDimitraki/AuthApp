@@ -12,7 +12,7 @@ import GoogleSignInSwift
 import GoogleSignIn
 
 struct AuthorizationView: View {
-    @ObservedObject private var viewModel = AuthorizationViewModel()
+    @ObservedObject var viewModel: AuthorizationViewModel
     
     var body: some View {
         NavigationView {
@@ -34,6 +34,8 @@ struct AuthorizationView: View {
                         switch result {
                         case .success(let user):
                             viewModel.user = user
+                            viewModel.isLoggedIn = true
+                            print(viewModel.user?.email)
                         case .failure(let error):
                             viewModel.failureAutorizationMassage = "Ошибка авторизации: \(error.localizedDescription)"
                         }
@@ -61,6 +63,6 @@ struct AuthorizationView: View {
 
 struct AuthorizationView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthorizationView()
+        AuthorizationView(viewModel: AuthorizationViewModel())
     }
 }

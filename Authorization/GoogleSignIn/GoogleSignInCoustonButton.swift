@@ -13,7 +13,7 @@ struct GoogleSignInCoustonButton: View {
     var body: some View {
         Button {
             Task {
-             try await   viewModel.signInWithGoogle()
+             try await viewModel.signInWithGoogle()
             }
         } label: {
             HStack {

@@ -14,11 +14,12 @@ class AuthorizationViewModel: ObservableObject {
     @Published var password = ""
     @Published var failureAutorizationMassage: String?
     @Published var failureResetPassword: String?
-    
+        
+    @Published var isLoggedIn = false
     @Published var isSecure = false
     @Published var isEmailValid = false
     @Published var isPasswordLenghtValid = false
-    
+
     @Published var user: User?
     
     private var cancellableSet: Set<AnyCancellable> = []

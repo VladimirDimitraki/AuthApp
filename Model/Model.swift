@@ -9,12 +9,12 @@ import Foundation
 import Combine
 
 class UserService: ObservableObject {
-    @Published var email: String
-    @Published var password: String
-    @Published var firstName: String
-    @Published var LastName: String
+    @Published var email: String?
+    @Published var password: String?
+    @Published var firstName: String?
+    @Published var LastName: String?
     
-    init(email: String, password: String, firstName: String, LastName: String) {
+    init(email: String? = nil, password: String? = nil, firstName: String? = nil, LastName: String? = nil) {
         self.email = email
         self.password = password
         self.firstName = firstName
