@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7839253C2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
+		7839253D2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
+		7839253E2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
+		783925452C99D9F800668A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783925442C99D9F800668A80 /* GoogleService-Info.plist */; };
+		783925462C99D9F800668A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783925442C99D9F800668A80 /* GoogleService-Info.plist */; };
+		783925472C99D9F800668A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 783925442C99D9F800668A80 /* GoogleService-Info.plist */; };
+		7839254D2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */; };
+		7839254E2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */; };
+		7839254F2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */; };
+		783925522C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783925512C99F8FC00668A80 /* GoogleSignInCoustonButton.swift */; };
+		783925532C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783925512C99F8FC00668A80 /* GoogleSignInCoustonButton.swift */; };
+		783925542C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783925512C99F8FC00668A80 /* GoogleSignInCoustonButton.swift */; };
 		788DE4AA2C99508400B9812D /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4A92C99508400B9812D /* Registration.swift */; };
 		788DE4AC2C99545E00B9812D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4AB2C99545E00B9812D /* RegistrationView.swift */; };
 		788DE4AD2C99545E00B9812D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4AB2C99545E00B9812D /* RegistrationView.swift */; };
@@ -40,9 +52,6 @@
 		78B8CB992C984AA100416A3B /* RestorePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CB982C984AA100416A3B /* RestorePassword.swift */; };
 		78B8CB9A2C984AA100416A3B /* RestorePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CB982C984AA100416A3B /* RestorePassword.swift */; };
 		78B8CB9B2C984AA100416A3B /* RestorePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CB982C984AA100416A3B /* RestorePassword.swift */; };
-		78B8CB9D2C98600300416A3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78B8CB9C2C98600300416A3B /* GoogleService-Info.plist */; };
-		78B8CB9E2C98600300416A3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78B8CB9C2C98600300416A3B /* GoogleService-Info.plist */; };
-		78B8CB9F2C98600300416A3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78B8CB9C2C98600300416A3B /* GoogleService-Info.plist */; };
 		78B8CBAB2C9870F500416A3B /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBAA2C9870F500416A3B /* SignIn.swift */; };
 		78B8CBAC2C9870F500416A3B /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBAA2C9870F500416A3B /* SignIn.swift */; };
 		78B8CBAD2C9870F500416A3B /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBAA2C9870F500416A3B /* SignIn.swift */; };
@@ -77,6 +86,10 @@
 
 /* Begin PBXFileReference section */
 		0616051E323B4CB5C492B14A /* Pods-AutorizedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutorizedApp.debug.xcconfig"; path = "Target Support Files/Pods-AutorizedApp/Pods-AutorizedApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7839253B2C99D67900668A80 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../opt/goinfre/melaniad/credentials.plist; sourceTree = "<group>"; };
+		783925442C99D9F800668A80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../opt/goinfre/melaniad/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
+		783925512C99F8FC00668A80 /* GoogleSignInCoustonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInCoustonButton.swift; sourceTree = "<group>"; };
 		788DE4A92C99508400B9812D /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		788DE4AB2C99545E00B9812D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		788DE4AF2C99555500B9812D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -97,7 +110,6 @@
 		78B8CB8C2C980F8D00416A3B /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		78B8CB942C982AEF00416A3B /* RequirementText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementText.swift; sourceTree = "<group>"; };
 		78B8CB982C984AA100416A3B /* RestorePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePassword.swift; sourceTree = "<group>"; };
-		78B8CB9C2C98600300416A3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78B8CBA32C9861E900416A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		78B8CBAA2C9870F500416A3B /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		78B8CBAE2C98759600416A3B /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
@@ -133,6 +145,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7839253F2C99D8C600668A80 /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */,
+				783925512C99F8FC00668A80 /* GoogleSignInCoustonButton.swift */,
+			);
+			path = GoogleSignIn;
+			sourceTree = "<group>";
+		};
 		788DE4A32C994EC800B9812D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				788DE4A62C994FA100B9812D /* Registration */,
-				78B8CB9C2C98600300416A3B /* GoogleService-Info.plist */,
+				7839253B2C99D67900668A80 /* credentials.plist */,
+				783925442C99D9F800668A80 /* GoogleService-Info.plist */,
 				78B8CBB22C987BFD00416A3B /* HomePage */,
 				78B8CBA92C9870DA00416A3B /* SignIn */,
 				78B8CB872C98095100416A3B /* Model */,
@@ -236,6 +258,7 @@
 		78B8CB732C9804DA00416A3B /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				7839253F2C99D8C600668A80 /* GoogleSignIn */,
 				78B8CB752C98052B00416A3B /* View */,
 				78B8CB742C98052100416A3B /* ViewModel */,
 			);
@@ -293,7 +316,6 @@
 				0616051E323B4CB5C492B14A /* Pods-AutorizedApp.debug.xcconfig */,
 				927CD1E12E8825C96280E50B /* Pods-AutorizedApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -404,8 +426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B8CB512C98035300416A3B /* Preview Assets.xcassets in Resources */,
+				783925452C99D9F800668A80 /* GoogleService-Info.plist in Resources */,
+				7839253C2C99D67900668A80 /* credentials.plist in Resources */,
 				78B8CB4E2C98035300416A3B /* Assets.xcassets in Resources */,
-				78B8CB9D2C98600300416A3B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +436,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B8CB9E2C98600300416A3B /* GoogleService-Info.plist in Resources */,
+				7839253D2C99D67900668A80 /* credentials.plist in Resources */,
+				783925462C99D9F800668A80 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +445,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B8CB9F2C98600300416A3B /* GoogleService-Info.plist in Resources */,
+				7839253E2C99D67900668A80 /* credentials.plist in Resources */,
+				783925472C99D9F800668A80 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783925522C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */,
 				78B8CB952C982AEF00416A3B /* RequirementText.swift in Sources */,
 				78B8CBB42C987C2700416A3B /* HomePage.swift in Sources */,
 				78B8CBAB2C9870F500416A3B /* SignIn.swift in Sources */,
@@ -486,6 +512,7 @@
 				78B8CB4A2C98035100416A3B /* AutorizedAppApp.swift in Sources */,
 				788DE4B22C995C2400B9812D /* RegistrationButton.swift in Sources */,
 				788DE4B02C99555500B9812D /* RegistrationViewModel.swift in Sources */,
+				7839254D2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
 				78B8CB7B2C98056900416A3B /* AuthorizationView.swift in Sources */,
 				78B8CB7F2C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,
 				78B8CB992C984AA100416A3B /* RestorePassword.swift in Sources */,
@@ -497,8 +524,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7839254E2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
 				78B8CB9A2C984AA100416A3B /* RestorePassword.swift in Sources */,
 				788DE4B32C995C2400B9812D /* RegistrationButton.swift in Sources */,
+				783925532C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */,
 				78B8CB962C982AEF00416A3B /* RequirementText.swift in Sources */,
 				78B8CB7C2C98056900416A3B /* AuthorizationView.swift in Sources */,
 				788DE4AD2C99545E00B9812D /* RegistrationView.swift in Sources */,
@@ -517,11 +546,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7839254F2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
 				78B8CB972C982AEF00416A3B /* RequirementText.swift in Sources */,
 				78B8CBB62C987C2700416A3B /* HomePage.swift in Sources */,
 				78B8CBAD2C9870F500416A3B /* SignIn.swift in Sources */,
 				788DE4AE2C99545E00B9812D /* RegistrationView.swift in Sources */,
 				78B8CB8F2C980F8D00416A3B /* FormField.swift in Sources */,
+				783925542C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */,
 				78B8CB8B2C98096300416A3B /* Model.swift in Sources */,
 				788DE4B42C995C2400B9812D /* RegistrationButton.swift in Sources */,
 				78B8CB672C98035300416A3B /* AutorizedAppUITestsLaunchTests.swift in Sources */,

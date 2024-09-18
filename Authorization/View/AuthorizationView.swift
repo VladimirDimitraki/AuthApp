@@ -8,6 +8,8 @@
 import SwiftUI
 import FirebaseAuth
 import FirebaseCore
+import GoogleSignInSwift
+import GoogleSignIn
 
 struct AuthorizationView: View {
     @ObservedObject private var viewModel = AuthorizationViewModel()
@@ -38,15 +40,19 @@ struct AuthorizationView: View {
                     }
                 }
                 
-                AuthtenticationError(viewModel: viewModel)
+                Divider()
                 
-                RestorePasswordView(viewModel: viewModel)
-                
-                
-                NavigationLink(destination: RegistrationView()) {
-                    Text("Создать аккаунт")
+                Group {
+                    GoogleSignInCoustonButton(viewModel: GoogleSignInButtonViewModel())
+                    
+                    AuthtenticationError(viewModel: viewModel)
+                    
+                    RestorePasswordView(viewModel: viewModel)
+                    
+                    NavigationLink(destination: RegistrationView()) {
+                        Text("Создать аккаунт")
+                    }
                 }
-                
             }
             .padding([.leading, .trailing])
         }
