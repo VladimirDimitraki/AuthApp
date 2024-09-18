@@ -31,7 +31,7 @@ struct AuthorizationView: View {
                 
                 SignInButton(title: "Войти") {
                     AuthService.shared.signInWithEmail(email: viewModel.email, password: viewModel.password) { result in
-                        switch result {
+                        switch result { 
                         case .success(let user):
                             viewModel.user = user
                             viewModel.isLoggedIn = true

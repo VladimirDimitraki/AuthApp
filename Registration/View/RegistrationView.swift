@@ -22,18 +22,14 @@ struct RegistrationView: View {
                 FormField(fieldName: "Email:", secureField: false, fieldValue: $viewModel.email)
                 
                 if viewModel.isNecessarilyEmailField {
-                    RequirementText(text: "Обязательное поле", isValid: viewModel.isEmailValid)
+                    RequirementText(text: "Обязательное поле @gmail.com", isValid: viewModel.isEmailValid)
                 }
-                
-                RequirementText(text: "@gmail.com", isValid: viewModel.isEmailValid)
                 
                 FormField(fieldName: "Password:", secureField: true, fieldValue: $viewModel.password)
                 
                 if viewModel.isNecessarilyPasswordField {
-                    RequirementText(text: "Обязательное поле", isValid: viewModel.isPasswordLenghtValid)
+                    RequirementText(text: "Обязательное поле минимум 8 символов", isValid: viewModel.isPasswordLenghtValid)
                 }
-                
-                RequirementText(text: "Минимум 8 символов", isValid: viewModel.isPasswordLenghtValid)
                 
                 if !viewModel.isValidBothForm() {
                     SignInButton(title: "!") {}
@@ -42,8 +38,17 @@ struct RegistrationView: View {
                         .animation(.spring())
                 } else {
                     SignInButton(title: "Зарегистрироваться") {
-                        Registration().registrationNewUser(email: viewModel.email, password: viewModel.password)
+                        Registration().registrationNewUser(email: viewModel.email, password: viewModel.password) { result in
+                            switch result {
+                            case .success(let user):
+                                viewModel.user = user
+                                viewModel.failureAutorizationMassage = "Письмо с подтверждением отправлено на почту"
+                            case .failure(let error):
+                                viewModel.failureAutorizationMassage = error.localizedDescription
+                            }
+                        }
                     }
+                    AuthtenticationError(viewModel: viewModel)
                 }
             }
         }
