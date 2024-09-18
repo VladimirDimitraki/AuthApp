@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import FirebaseAuth
+import SwiftUI
 
 class AuthorizationViewModel: ObservableObject {
     @Published var email = ""
@@ -24,8 +25,10 @@ class AuthorizationViewModel: ObservableObject {
     @Published var isPasswordLenghtValid = false
     @Published var isNecessarilyEmailField = false
     @Published var isNecessarilyPasswordField = false
-    
+    @Published var isShowedPhotoPicker = false
     @Published var user: User?
+    
+    @Published var defaultImage = UIImage(systemName: "person.fill")!
     
     private var cancellableSet: Set<AnyCancellable> = []
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782219C42C9B15660084E98D /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782219C32C9B15660084E98D /* PhotoPicker.swift */; };
 		7839253C2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
 		7839253D2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
 		7839253E2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
@@ -57,13 +58,13 @@
 		78B8CBAF2C98759600416A3B /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBAE2C98759600416A3B /* SignInButton.swift */; };
 		78B8CBB02C98759600416A3B /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBAE2C98759600416A3B /* SignInButton.swift */; };
 		78B8CBB12C98759600416A3B /* SignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBAE2C98759600416A3B /* SignInButton.swift */; };
-		78B8CBB42C987C2700416A3B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB32C987C2700416A3B /* HomePage.swift */; };
-		78B8CBB52C987C2700416A3B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB32C987C2700416A3B /* HomePage.swift */; };
-		78B8CBB62C987C2700416A3B /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB32C987C2700416A3B /* HomePage.swift */; };
+		78B8CBB42C987C2700416A3B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB32C987C2700416A3B /* HomePageView.swift */; };
+		78B8CBB52C987C2700416A3B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB32C987C2700416A3B /* HomePageView.swift */; };
+		78B8CBB62C987C2700416A3B /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB32C987C2700416A3B /* HomePageView.swift */; };
 		78B8CBB82C9882E200416A3B /* AuthtenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB72C9882E200416A3B /* AuthtenticationError.swift */; };
 		78B8CBB92C9882E200416A3B /* AuthtenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB72C9882E200416A3B /* AuthtenticationError.swift */; };
 		78B8CBBA2C9882E200416A3B /* AuthtenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CBB72C9882E200416A3B /* AuthtenticationError.swift */; };
-		78DBD3FE2C9AD64E0049C4FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBD3FD2C9AD64E0049C4FF /* User.swift */; };
+		78DBD3FE2C9AD64E0049C4FF /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBD3FD2C9AD64E0049C4FF /* CurrentUser.swift */; };
 		C1F6A818E12684E926B44D92 /* Pods_AutorizedApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E9A7B2B66806E73A62B53 /* Pods_AutorizedApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 
 /* Begin PBXFileReference section */
 		0616051E323B4CB5C492B14A /* Pods-AutorizedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutorizedApp.debug.xcconfig"; path = "Target Support Files/Pods-AutorizedApp/Pods-AutorizedApp.debug.xcconfig"; sourceTree = "<group>"; };
+		782219C32C9B15660084E98D /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		7839253B2C99D67900668A80 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../opt/goinfre/melaniad/credentials.plist; sourceTree = "<group>"; };
 		783925442C99D9F800668A80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../opt/goinfre/melaniad/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
@@ -112,9 +114,9 @@
 		78B8CBA32C9861E900416A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		78B8CBAA2C9870F500416A3B /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		78B8CBAE2C98759600416A3B /* SignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButton.swift; sourceTree = "<group>"; };
-		78B8CBB32C987C2700416A3B /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		78B8CBB32C987C2700416A3B /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		78B8CBB72C9882E200416A3B /* AuthtenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthtenticationError.swift; sourceTree = "<group>"; };
-		78DBD3FD2C9AD64E0049C4FF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		78DBD3FD2C9AD64E0049C4FF /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		927CD1E12E8825C96280E50B /* Pods-AutorizedApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutorizedApp.release.xcconfig"; path = "Target Support Files/Pods-AutorizedApp/Pods-AutorizedApp.release.xcconfig"; sourceTree = "<group>"; };
 		BF2E9A7B2B66806E73A62B53 /* Pods_AutorizedApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutorizedApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +147,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782219C22C9B0FD50084E98D /* PhotoModule */ = {
+			isa = PBXGroup;
+			children = (
+				782219C32C9B15660084E98D /* PhotoPicker.swift */,
+			);
+			path = PhotoModule;
+			sourceTree = "<group>";
+		};
 		7839253F2C99D8C600668A80 /* GoogleSignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +193,8 @@
 		78B8CB3D2C98035100416A3B = {
 			isa = PBXGroup;
 			children = (
-				78DBD3FC2C9AD63B0049C4FF /* User */,
+				782219C22C9B0FD50084E98D /* PhotoModule */,
+				78DBD3FC2C9AD63B0049C4FF /* CurrentUser */,
 				788DE4A62C994FA100B9812D /* Registration */,
 				7839253B2C99D67900668A80 /* credentials.plist */,
 				783925442C99D9F800668A80 /* GoogleService-Info.plist */,
@@ -297,17 +308,17 @@
 		78B8CBB22C987BFD00416A3B /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				78B8CBB32C987C2700416A3B /* HomePage.swift */,
+				78B8CBB32C987C2700416A3B /* HomePageView.swift */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
 		};
-		78DBD3FC2C9AD63B0049C4FF /* User */ = {
+		78DBD3FC2C9AD63B0049C4FF /* CurrentUser */ = {
 			isa = PBXGroup;
 			children = (
-				78DBD3FD2C9AD64E0049C4FF /* User.swift */,
+				78DBD3FD2C9AD64E0049C4FF /* CurrentUser.swift */,
 			);
-			path = User;
+			path = CurrentUser;
 			sourceTree = "<group>";
 		};
 		8642BF24F03CEE4E0F7576EE /* Pods */ = {
@@ -501,7 +512,7 @@
 			files = (
 				783925522C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */,
 				78B8CB952C982AEF00416A3B /* RequirementText.swift in Sources */,
-				78B8CBB42C987C2700416A3B /* HomePage.swift in Sources */,
+				78B8CBB42C987C2700416A3B /* HomePageView.swift in Sources */,
 				78B8CBAB2C9870F500416A3B /* SignIn.swift in Sources */,
 				788DE4AC2C99545E00B9812D /* RegistrationView.swift in Sources */,
 				78B8CB8D2C980F8D00416A3B /* FormField.swift in Sources */,
@@ -512,8 +523,9 @@
 				78B8CB4A2C98035100416A3B /* AutorizedAppApp.swift in Sources */,
 				788DE4B22C995C2400B9812D /* RegistrationButton.swift in Sources */,
 				7839254D2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
+				782219C42C9B15660084E98D /* PhotoPicker.swift in Sources */,
 				78B8CB7B2C98056900416A3B /* AuthorizationView.swift in Sources */,
-				78DBD3FE2C9AD64E0049C4FF /* User.swift in Sources */,
+				78DBD3FE2C9AD64E0049C4FF /* CurrentUser.swift in Sources */,
 				78B8CB7F2C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,
 				78B8CB992C984AA100416A3B /* RestorePassword.swift in Sources */,
 				78B8CBB82C9882E200416A3B /* AuthtenticationError.swift in Sources */,
@@ -533,7 +545,7 @@
 				788DE4AD2C99545E00B9812D /* RegistrationView.swift in Sources */,
 				78B8CB5B2C98035300416A3B /* AutorizedAppTests.swift in Sources */,
 				78B8CB802C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,
-				78B8CBB52C987C2700416A3B /* HomePage.swift in Sources */,
+				78B8CBB52C987C2700416A3B /* HomePageView.swift in Sources */,
 				78B8CBB02C98759600416A3B /* SignInButton.swift in Sources */,
 				78B8CB8A2C98096300416A3B /* Model.swift in Sources */,
 				78B8CB8E2C980F8D00416A3B /* FormField.swift in Sources */,
@@ -548,7 +560,7 @@
 			files = (
 				7839254F2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
 				78B8CB972C982AEF00416A3B /* RequirementText.swift in Sources */,
-				78B8CBB62C987C2700416A3B /* HomePage.swift in Sources */,
+				78B8CBB62C987C2700416A3B /* HomePageView.swift in Sources */,
 				78B8CBAD2C9870F500416A3B /* SignIn.swift in Sources */,
 				788DE4AE2C99545E00B9812D /* RegistrationView.swift in Sources */,
 				78B8CB8F2C980F8D00416A3B /* FormField.swift in Sources */,
