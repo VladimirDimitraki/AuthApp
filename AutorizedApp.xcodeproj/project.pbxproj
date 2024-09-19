@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		782219C42C9B15660084E98D /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782219C32C9B15660084E98D /* PhotoPicker.swift */; };
+		782219C42C9B15660084E98D /* LibraryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782219C32C9B15660084E98D /* LibraryPicker.swift */; };
 		7839253C2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
 		7839253D2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
 		7839253E2C99D67900668A80 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7839253B2C99D67900668A80 /* credentials.plist */; };
@@ -27,6 +27,12 @@
 		788DE4B22C995C2400B9812D /* RegistrationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4B12C995C2400B9812D /* RegistrationButton.swift */; };
 		788DE4B32C995C2400B9812D /* RegistrationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4B12C995C2400B9812D /* RegistrationButton.swift */; };
 		788DE4B42C995C2400B9812D /* RegistrationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DE4B12C995C2400B9812D /* RegistrationButton.swift */; };
+		789898D92C9C155700847282 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789898D82C9C155700847282 /* ImageEditorView.swift */; };
+		789898DA2C9C155700847282 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789898D82C9C155700847282 /* ImageEditorView.swift */; };
+		789898DB2C9C155700847282 /* ImageEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789898D82C9C155700847282 /* ImageEditorView.swift */; };
+		789898DD2C9C331C00847282 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789898DC2C9C331C00847282 /* ButtonModifier.swift */; };
+		789898DE2C9C331C00847282 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789898DC2C9C331C00847282 /* ButtonModifier.swift */; };
+		789898DF2C9C331C00847282 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789898DC2C9C331C00847282 /* ButtonModifier.swift */; };
 		78B8CB4A2C98035100416A3B /* AutorizedAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CB492C98035100416A3B /* AutorizedAppApp.swift */; };
 		78B8CB4C2C98035100416A3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8CB4B2C98035100416A3B /* ContentView.swift */; };
 		78B8CB4E2C98035300416A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B8CB4D2C98035300416A3B /* Assets.xcassets */; };
@@ -87,7 +93,7 @@
 
 /* Begin PBXFileReference section */
 		0616051E323B4CB5C492B14A /* Pods-AutorizedApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutorizedApp.debug.xcconfig"; path = "Target Support Files/Pods-AutorizedApp/Pods-AutorizedApp.debug.xcconfig"; sourceTree = "<group>"; };
-		782219C32C9B15660084E98D /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		782219C32C9B15660084E98D /* LibraryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPicker.swift; sourceTree = "<group>"; };
 		7839253B2C99D67900668A80 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../opt/goinfre/melaniad/credentials.plist; sourceTree = "<group>"; };
 		783925442C99D9F800668A80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../opt/goinfre/melaniad/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7839254C2C99E4D100668A80 /* GoogleSignInButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButtonView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 		788DE4A92C99508400B9812D /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		788DE4AB2C99545E00B9812D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		788DE4B12C995C2400B9812D /* RegistrationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationButton.swift; sourceTree = "<group>"; };
+		789898D82C9C155700847282 /* ImageEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditorView.swift; sourceTree = "<group>"; };
+		789898DC2C9C331C00847282 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		78B8CB462C98035100416A3B /* AutorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B8CB492C98035100416A3B /* AutorizedAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizedAppApp.swift; sourceTree = "<group>"; };
 		78B8CB4B2C98035100416A3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,7 +158,9 @@
 		782219C22C9B0FD50084E98D /* PhotoModule */ = {
 			isa = PBXGroup;
 			children = (
-				782219C32C9B15660084E98D /* PhotoPicker.swift */,
+				782219C32C9B15660084E98D /* LibraryPicker.swift */,
+				789898D82C9C155700847282 /* ImageEditorView.swift */,
+				789898DC2C9C331C00847282 /* ButtonModifier.swift */,
 			);
 			path = PhotoModule;
 			sourceTree = "<group>";
@@ -523,7 +533,9 @@
 				78B8CB4A2C98035100416A3B /* AutorizedAppApp.swift in Sources */,
 				788DE4B22C995C2400B9812D /* RegistrationButton.swift in Sources */,
 				7839254D2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
-				782219C42C9B15660084E98D /* PhotoPicker.swift in Sources */,
+				782219C42C9B15660084E98D /* LibraryPicker.swift in Sources */,
+				789898D92C9C155700847282 /* ImageEditorView.swift in Sources */,
+				789898DD2C9C331C00847282 /* ButtonModifier.swift in Sources */,
 				78B8CB7B2C98056900416A3B /* AuthorizationView.swift in Sources */,
 				78DBD3FE2C9AD64E0049C4FF /* CurrentUser.swift in Sources */,
 				78B8CB7F2C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,
@@ -542,6 +554,7 @@
 				783925532C99F8FC00668A80 /* GoogleSignInCoustonButton.swift in Sources */,
 				78B8CB962C982AEF00416A3B /* RequirementText.swift in Sources */,
 				78B8CB7C2C98056900416A3B /* AuthorizationView.swift in Sources */,
+				789898DA2C9C155700847282 /* ImageEditorView.swift in Sources */,
 				788DE4AD2C99545E00B9812D /* RegistrationView.swift in Sources */,
 				78B8CB5B2C98035300416A3B /* AutorizedAppTests.swift in Sources */,
 				78B8CB802C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,
@@ -549,6 +562,7 @@
 				78B8CBB02C98759600416A3B /* SignInButton.swift in Sources */,
 				78B8CB8A2C98096300416A3B /* Model.swift in Sources */,
 				78B8CB8E2C980F8D00416A3B /* FormField.swift in Sources */,
+				789898DE2C9C331C00847282 /* ButtonModifier.swift in Sources */,
 				78B8CBB92C9882E200416A3B /* AuthtenticationError.swift in Sources */,
 				78B8CBAC2C9870F500416A3B /* SignIn.swift in Sources */,
 			);
@@ -558,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789898DB2C9C155700847282 /* ImageEditorView.swift in Sources */,
 				7839254F2C99E4D100668A80 /* GoogleSignInButtonView.swift in Sources */,
 				78B8CB972C982AEF00416A3B /* RequirementText.swift in Sources */,
 				78B8CBB62C987C2700416A3B /* HomePageView.swift in Sources */,
@@ -569,6 +584,7 @@
 				788DE4B42C995C2400B9812D /* RegistrationButton.swift in Sources */,
 				78B8CB672C98035300416A3B /* AutorizedAppUITestsLaunchTests.swift in Sources */,
 				78B8CBB12C98759600416A3B /* SignInButton.swift in Sources */,
+				789898DF2C9C331C00847282 /* ButtonModifier.swift in Sources */,
 				78B8CB652C98035300416A3B /* AutorizedAppUITests.swift in Sources */,
 				78B8CB7D2C98056900416A3B /* AuthorizationView.swift in Sources */,
 				78B8CB812C98087B00416A3B /* AuthorizationViewModel.swift in Sources */,

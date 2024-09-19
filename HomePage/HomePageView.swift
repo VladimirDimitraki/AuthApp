@@ -25,11 +25,28 @@ struct HomePage: View {
                 Text(viewModel.user?.email ?? "User")
             }
             
+            
+            HStack {
+                Button("Camera") {
+                    viewModel.sourceType = .camera
+                    viewModel.isShowedPhotoPicker = true
+                }
+                
+                Button("Library") {
+                    viewModel.sourceType = .photoLibrary
+                    viewModel.isShowedPhotoPicker = true
+                }
+            }
+            
             Spacer()
             
                 .sheet(isPresented: $viewModel.isShowedPhotoPicker) {
-                    PhotoPicker(avatarImage: $viewModel.defaultImage)
-            }
+                    if viewModel.sourceType == .camera {
+                        PhotoPicker(avatarImage: $viewModel.defaultImage, sourceType: .camera)
+                    } else {
+                        PhotoPicker(avatarImage: $viewModel.defaultImage, sourceType: .photoLibrary)
+                    }
+                }
         }
     }
 }

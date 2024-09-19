@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct PhotoPicker: UIViewControllerRepresentable {
     
     @Binding var avatarImage: UIImage
+    var sourceType: UIImagePickerController.SourceType
     
     func makeUIViewController(context: Context) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.delegate = context.coordinator
+        picker.sourceType = sourceType
         picker.allowsEditing = true
         return picker
     }

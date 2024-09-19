@@ -21,3 +21,7 @@ class UserService: ObservableObject {
         self.LastName = LastName
     }
 }
+
+enum SourceType {
+    case camera, photoLibrary
+}

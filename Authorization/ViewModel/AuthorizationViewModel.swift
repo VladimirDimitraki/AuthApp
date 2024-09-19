@@ -28,6 +28,8 @@ class AuthorizationViewModel: ObservableObject {
     @Published var isShowedPhotoPicker = false
     @Published var user: User?
     
+    @Published var sourceType: SourceType = .photoLibrary
+    
     @Published var defaultImage = UIImage(systemName: "person.fill")!
     
     private var cancellableSet: Set<AnyCancellable> = []

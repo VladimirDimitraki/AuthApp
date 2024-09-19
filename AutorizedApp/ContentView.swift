@@ -12,7 +12,7 @@ struct ContentView: View {
     @ObservedObject var viewModel = AuthorizationViewModel()
     
     var body: some View {
-        if viewModel.isLoggedIn || Auth.auth().currentUser != nil {
+        if viewModel.isLoggedIn && Auth.auth().currentUser != nil {
             HomePage(viewModel: viewModel)
         } else {
             AuthorizationView(viewModel: viewModel)
