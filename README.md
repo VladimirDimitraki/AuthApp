@@ -5,7 +5,7 @@ iOS приложение, цель которого познакомится с 
 > Используемые технологии: 
 SwiftUi, Combine, Firebase, Google SignIn SDK, архитектура MVVM. 
 
-В приложении реализованны 3 экрана
+В приложении реализованы 3 экрана
 
 >1. Экран аутентификации
 
@@ -21,4 +21,4 @@ SwiftUi, Combine, Firebase, Google SignIn SDK, архитектура MVVM.
 
 > 3. Экран восстоновление пароля
 
-![reg](Gif/GifRestore.gif)
+![reg](Gif/GifRestore.gif) 
