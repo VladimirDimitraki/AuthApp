@@ -1,6 +1,6 @@
 # iOS app with using Firebase and Google SignIn SDK <img src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-logomark.svg" width="20" height="20">
 
-iOS приложение, цель которого познакомится с Firebase, и Google sign in SDK
+iOS приложение, цель которого познакомиться с Firebase, и Google sign in SDK
 
 > Используемые технологии: 
 SwiftUi, Combine, Firebase, Google SignIn SDK, архитектура MVVM. 
