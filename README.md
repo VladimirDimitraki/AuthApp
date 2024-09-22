@@ -19,6 +19,6 @@ SwiftUi, Combine, Firebase, Google SignIn SDK, архитектура MVVM.
 
 ![reg](Gif/GifReg.gif)
 
-> 3. Экран Восстановления пароля
+> 3. Экран восстановления пароля
 
 ![reg](Gif/GifRestore.gif) 
